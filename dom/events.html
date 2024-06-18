@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML EVENTS</title>
+</head>
+<body style="background-color: #212121; color: bisque;">
+    <H2>AMAZING images</H2>
+    <UL id="images">
+        <li> <img width="100px" id="car" src="https://images.pexels.com/photos/22757188/pexels-photo-22757188/free-photo-of-a-black-and-white-photo-of-a-woman-and-man.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="coupleWithCar" ></li>
+        <li>
+                <img  width="100px" id="college" src="https://images.pexels.com/photos/25643188/pexels-photo-25643188/free-photo-of-back-view-of-graduates-in-gowns-throwing-academic-hats-on-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="collegeDegree">
+
+        </li>
+        <li>
+                <img  width="100px" id="couple" src="https://images.pexels.com/photos/7495924/pexels-photo-7495924.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="couple">
+
+        </li>
+        <li><a style="color: aquamarine;" href="https://www.google.com/"  id="google">google</a></li>
+    </UL>
+    
+</body>
+<script>
+
+    //******* approcah 1   *********
+    // document.getElementById('couple').onclick = function(){
+    //     alert("couple image is clicked");
+    // }
+
+     //************* approach 2   ************
+    //  document.getElementById('car').addEventListener('click', function(e){
+    //     console.log(e);
+    //  })
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(event.target.tagName);
+        if(e.target.tagName = "IMG"){
+            let removeIt = e.target.parentNode;
+        // removeIt.remove();
+        removeIt.parentNode.removeChild(removeIt);
+
+        }
+
+
+        // let removeIt = e.target.parentNode;
+        // // removeIt.remove();
+        // removeIt.parentNode.removeChild(removeIt);
+    },false)
+</script>
+
+
+</html>
