@@ -1,0 +1,44 @@
+body{
+    background-color: #212121;
+    color: beige;
+    display: block;
+   
+    text-align: center;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+#yellow{
+    background-color: yellow;
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    margin: 10px;
+    
+}
+#green{
+    background-color: green;
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    margin: 10px;
+}
+#blue{
+    background-color: blue;
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    margin: 10px;
+}
+#orange{
+    background-color: orange;
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    margin: 10px;
+}
