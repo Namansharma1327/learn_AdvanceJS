@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAI AUR CODE</title>
+</head>
+<body style="background-Color: #212121; color:white">
+    <ul class="language">
+        <li>java</li>
+    </ul>
+    
+</body>
+<script>
+    function addLang(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLang('js');
+    
+
+    //EDITING ELEMENT
+    const firstLang = document.querySelector("li:nth-child(1)")
+    const newLi = document.createElement('li');
+    newLi.textContent = "mojo";
+    firstLang.replaceWith(newLi);
+
+    const secLang = document.querySelector("li:nth-child(2)");
+    const newLi2 =document.createElement('li');
+    newLi2.textContent = "a new language";
+    secLang.replaceWith(newLi2);
+
+    //REMOVING ELEMENT
+
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+</script>
+</html>
